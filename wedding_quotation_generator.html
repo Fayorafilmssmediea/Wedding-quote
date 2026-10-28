@@ -197,26 +197,26 @@
           <span class="text-[11px] text-stone-400">Add pre-configured ceremony packages</span>
         </div>
         <div class="flex flex-wrap gap-2">
-          <button onclick="addPresetPackage('weddingDay')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            💍 Wedding Ceremony Day
+          <button onclick="addPresetPackage('Engagement')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            💍 Engagement
           </button>
-          <button onclick="addPresetPackage('sangeet')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            💃 Sangeet & Cocktail Night
+          <button onclick="addPresetPackage('Sangeet')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            💃 Sangeet 
           </button>
-          <button onclick="addPresetPackage('haldi')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            🌿 Haldi & Mehendi Fiesta
+          <button onclick="addPresetPackage('Haldi')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            💛 Haldi 
           </button>
-          <button onclick="addPresetPackage('reception')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            ✨ Grand Reception
+          <button onclick="addPresetPackage('Reception')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            ✨ Reception
           </button>
           <button onclick="addPresetPackage('preWedding')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            🎬 Pre-Wedding Cinematic Shoot
+            🕊️ Pre-Wedding 
           </button>
-          <button onclick="addPresetPackage('albums')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            📖 Luxury Photobook Albums
+          <button onclick="addPresetPackage('Wedding')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            👑 Wedding
           </button>
-          <button onclick="addPresetPackage('droneCinematic')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
-            🚁 4K Drone & Teaser Edit
+          <button onclick="addPresetPackage('After Party')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white hover:bg-amber-50 border border-stone-200 hover:border-amber-300 text-stone-800 transition shadow-2xs">
+            🪩 After Party
           </button>
         </div>
       </div>
@@ -253,17 +253,17 @@
               <div class="p-2.5 bg-white rounded-lg border border-stone-200 shadow-2xs">
                 <span class="text-[10px] uppercase font-bold text-stone-500 block">Booking Advance</span>
                 <span class="text-sm font-bold text-stone-900 block mt-0.5" id="tokenMilestoneAmount">₹0</span>
-                <span class="text-[10px] text-amber-700 font-semibold">(25% to lock dates)</span>
+                <span class="text-[10px] text-amber-700 font-semibold">(50% to lock dates)</span>
               </div>
               <div class="p-2.5 bg-white rounded-lg border border-stone-200 shadow-2xs">
                 <span class="text-[10px] uppercase font-bold text-stone-500 block">On Shoot Day</span>
                 <span class="text-sm font-bold text-stone-900 block mt-0.5" id="eventMilestoneAmount">₹0</span>
-                <span class="text-[10px] text-amber-700 font-semibold">(50% during events)</span>
+                <span class="text-[10px] text-amber-700 font-semibold">(30% during events)</span>
               </div>
               <div class="p-2.5 bg-white rounded-lg border border-stone-200 shadow-2xs">
                 <span class="text-[10px] uppercase font-bold text-stone-500 block">Final Delivery</span>
                 <span class="text-sm font-bold text-stone-900 block mt-0.5" id="deliveryMilestoneAmount">₹0</span>
-                <span class="text-[10px] text-amber-700 font-semibold">(25% with albums/video)</span>
+                <span class="text-[10px] text-amber-700 font-semibold">(20% with albums/video)</span>
               </div>
             </div>
             
@@ -339,7 +339,7 @@
       <!-- Studio Contact Footer -->
       <div class="mt-8 pt-4 border-t border-stone-200 text-center text-xs text-stone-500">
         <p class="font-medium text-stone-700">Fayora filmss & media • Wedding Cinematography & Fine-Art Photography</p>
-        <p class="mt-0.5 text-[11px]">Instagram: @fayorafilms • Phone: +91 91234 56789 • Mumbai • Jaipur • Udaipur • Available Worldwide</p>
+        <p class="mt-0.5 text-[11px]">Instagram: @fayorafilms • Phone: +91 90045 54732 • Mumbai </p>
       </div>
 
     </div>
@@ -359,75 +359,87 @@
     // Default Wedding Service Presets
     const weddingPresets = {
       weddingDay: {
-        title: "💍 Wedding Ceremony & Varmala (Full Day Coverage)",
+        title: "💍 Engagement",
         days: 1,
         items: [
-          { name: "Senior Candid Wedding Photographer (Full Frame A7M4)", qty: 1, rate: 25000 },
-          { name: "Traditional / Stage Photographer", qty: 1, rate: 15000 },
-          { name: "Cinematographer (Sony FX3 / A7S3 + Gimbal + Prime Lenses)", qty: 2, rate: 22000 },
-          { name: "Traditional Full HD Video Cameraman", qty: 1, rate: 12000 },
-          { name: "High-End Audio Ambient Recorders & Wireless Mics", qty: 1, rate: 4000 },
-          { name: "Post Production: Cinematic Highlights + Full Length Edit", qty: 1, rate: 20000 }
+          { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       sangeet: {
-        title: "💃 Sangeet, Cocktail & Ring Ceremony (Evening Coverage)",
+        title: "💃 Sangeet",
         days: 1,
         items: [
-          { name: "Candid Event Photographer (Low-light Primes)", qty: 1, rate: 18000 },
-          { name: "Cinematographer for Dance Performances & Crowd", qty: 2, rate: 18000 },
-          { name: "Traditional Stage Coverage (Photo + Video)", qty: 1, rate: 18000 },
-          { name: "Audio Console Multi-Track Live Recording", qty: 1, rate: 3000 },
-          { name: "Same-Day / Next-Day Reel Edit for Social Media", qty: 1, rate: 4500 }
+          { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       haldi: {
-        title: "🌿 Haldi & Mehendi Fiesta (Daytime Vibrant Shoots)",
+        title: "💛 Haldi",
         days: 1,
         items: [
-          { name: "Candid Candid Photographer (Colors & Portraits)", qty: 1, rate: 16000 },
-          { name: "Creative Cinematographer (Slow-Motion 120fps)", qty: 1, rate: 18000 },
-          { name: "Traditional Still Photographer", qty: 1, rate: 10000 },
-          { name: "Special Haldi Teaser & Color Grading", qty: 1, rate: 7000 }
+          { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       reception: {
-        title: "✨ Grand Reception Gala",
+        title: "✨ Reception",
         days: 1,
         items: [
-          { name: "Lead Candid Portrait Photographer", qty: 1, rate: 20000 },
-          { name: "Stage & VIP Guests Photographer", qty: 1, rate: 12000 },
-          { name: "Cinematic Film Crew (2 Cameras + Gimbal)", qty: 2, rate: 20000 },
-          { name: "Post Production & Color Master", qty: 1, rate: 10000 }
+           { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       preWedding: {
-        title: "🎬 Pre-Wedding Concept Film & Fashion Portraits",
+        title: "🕊️ Pre-Wedding ",
         days: 1,
         items: [
-          { name: "Concept Director & Lead Cinematographer", qty: 1, rate: 25000 },
-          { name: "Fashion / Editorial Candid Photographer", qty: 1, rate: 20000 },
-          { name: "Drone Pilot (4K Aerial Couple Shots)", qty: 1, rate: 12000 },
-          { name: "Makeup & Hair Styling Assistant Support", qty: 1, rate: 8000 },
-          { name: "3-4 Minute Musical Story Film + 30 Master Retouched Photos", qty: 1, rate: 15000 }
+          { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       albums: {
-        title: "📖 Luxury Flush-Mount Canvera Wedding Photobooks",
+        title: "👑 Wedding",
         days: 1,
         items: [
-          { name: "Grand Couple Album (12x36 Flushmount Leatherette, 40 Sheets/250 Photos)", qty: 1, rate: 24000 },
-          { name: "Mini Parent Replica Photobooks (Pair of 2 Albums)", qty: 1, rate: 16000 },
-          { name: "Custom Wooden Handcrafted Box with Crystal Pendrive", qty: 1, rate: 4500 }
+           { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       },
       droneCinematic: {
-        title: "🚁 4K Aerial Drone & Social Media Instagram Reels Pack",
+        title: "🪩 After Party",
         days: 2,
         items: [
-          { name: "Licensed 4K Drone Operator (Venue & Baraat Entry)", qty: 1, rate: 12000 },
-          { name: "Dedicated Vertical Reel Maker on Mobile/A74 (Instant Delivery)", qty: 1, rate: 15000 },
-          { name: "3 Curated Trending Reels (48hr Turnaround)", qty: 1, rate: 9000 }
+           { name: "Traditional Photo", qty: 1, rate: 25000 },
+          { name: "Traditional Video", qty: 1, rate: 15000 },
+          { name: "Candid Photo", qty: 2, rate: 22000 },
+          { name: "Cinematic Video", qty: 1, rate: 12000 },
+          { name: "Drone Coverage", qty: 1, rate: 4000 },
+          { name: "Family Photo", qty: 1, rate: 20000 }
         ]
       }
     };
