@@ -29,39 +29,52 @@
     }
     /* Clean Print Styles for PDF */
     @media print {
-      body {
-        background: #ffffff !important;
-        padding: 0 !important;
-        font-size: 12px;
-      }
-      .no-print {
-        display: none !important;
-      }
-      .print-shadow-none {
-        box-shadow: none !important;
-        border: 1px solid #e2e8f0 !important;
-      }
-      .page-break-inside-avoid {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-      input, textarea, select {
-        border: none !important;
-        background: transparent !important;
-        padding: 0 !important;
-        appearance: none;
-        -webkit-appearance: none;
-      }
-      .logo-box {
-        border: none !important;
-      }
-      #printContainer {
-        max-width: 100% !important;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 15px !important;
-      }
-    }
+  @page {
+    size: A4;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+  body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    font-size: 11px !important;
+    color: #111827 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-shadow-none {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  #printContainer {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Badi gaps aur forceful page break rokne ke liye */
+  .page-break-inside-avoid {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+  /* Sirf main payment summary box ko tootne se bachane ke liye */
+  .keep-together {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  /* Margins ko compact karein taaki data aaram se fit ho */
+  .mt-8, .mt-10, .mt-6 {
+    margin-top: 12px !important;
+  }
+  .pb-8, .p-6, .p-5 {
+    padding: 8px !important;
+  }
+  table th, table td {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+}
   </style>
 </head>
 <body class="min-h-screen pb-16 antialiased selection:bg-amber-100 selection:text-amber-900">
@@ -541,8 +554,7 @@
         const totalPackageCost = pkgSubtotal * dayMultiplier;
 
         const card = document.createElement("div");
-        card.className = "bg-white rounded-xl border border-stone-200/90 shadow-2xs overflow-hidden page-break-inside-avoid transition hover:border-amber-200";
-
+card.className = "bg-white rounded-xl border border-stone-200/90 shadow-2xs overflow-hidden transition hover:border-amber-200";
         card.innerHTML = `
           <!-- Package Header -->
           <div class="bg-stone-50/90 px-4 py-3 border-b border-stone-200 flex flex-wrap items-center justify-between gap-2">
