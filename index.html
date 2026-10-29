@@ -358,7 +358,7 @@
 
     // Default Wedding Service Presets
     const weddingPresets = {
-      weddingDay: {
+      Engagement: {
         title: "💍 Engagement",
         days: 1,
         items: [
@@ -508,7 +508,7 @@
     function resetQuotation() {
       if (confirm("Reset and clear all quotation items?")) {
         packages = [];
-        addPresetPackage('weddingDay');
+        addPresetPackage('Engagement');
         addPresetPackage('sangeet');
         showToast("Quotation reset to defaults");
       }
@@ -775,7 +775,7 @@
 
     // Initial seed: Wedding Ceremony + Sangeet
     window.onload = function() {
-      addPresetPackage('weddingDay');
+      addPresetPackage('Engagement');
       addPresetPackage('sangeet');
       addPresetPackage('albums');
     };
